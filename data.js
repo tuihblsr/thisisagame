@@ -8,11 +8,13 @@ var bleh = {};
 bleh.rewrites = 4;
 
 bleh.start = function() {
+    bleh.fps = 60;
+    
     bleh.resources = { Coal: 0 };
     bleh.upgrades = {};
     bleh.buildings = {};
 
-    bleh.renderedgenerators = new Set();
+    bleh.displayelements = {buildings: [], upgrades: [], achievements: []};
 
     const generatorbox = document.querySelector('.generatorBox');
     const coaldisplay = document.getElementById('coalDisplay');
