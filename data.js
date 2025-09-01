@@ -14,7 +14,6 @@ bleh.start = function() {
 
     bleh.renderedgenerators = new Set();
 
-    /*  Now for the elements  */
     const generatorbox = document.querySelector('.generatorBox');
     const coaldisplay = document.getElementById('coalDisplay');
     const imagebox = document.querySelector('.imageBox');
