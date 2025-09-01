@@ -20,3 +20,11 @@ bleh.start = function() {
     const coaldisplay = document.getElementById('coalDisplay');
     const imagebox = document.querySelector('.imageBox');
 }
+
+bleh.upgrade = function(info) {
+    this.name = info.name;
+    this.desc = info.desc;
+    this.baseprice = info.price;
+    this.price = this.baseprice;
+    this.own = 0;
+}
